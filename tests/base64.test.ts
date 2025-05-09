@@ -1,4 +1,4 @@
-import { fromBase64, toBase64 } from 'turf-sim/internal/utils/base64';
+import { fromBase64, toBase64 } from 'turf-sim-live/internal/utils/base64';
 
 describe.each(['Buffer', 'atob'])('with %s', (mode) => {
   let originalBuffer: BufferConstructor;

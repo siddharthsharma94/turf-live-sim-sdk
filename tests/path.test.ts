@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'turf-sim/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'turf-sim-live/internal/utils/path';
 import { inspect } from 'node:util';
 
 describe('path template tag function', () => {

@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { TurfSim } from 'turf-sim';
+import { TurfSim } from 'turf-sim-live';
 
 const { stringifyQuery } = TurfSim.prototype as any;
 

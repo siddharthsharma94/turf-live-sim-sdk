@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^turf-sim(/.*)?',
+              regex: '^turf-sim-live(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],
