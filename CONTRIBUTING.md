@@ -42,15 +42,15 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/turf-sim-typescript.git
+$ npm install git+ssh://git@github.com:siddharthsharma94/turf-live-sim.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/turf-sim-typescript
-$ cd turf-sim-typescript
+$ git clone https://www.github.com/siddharthsharma94/turf-live-sim
+$ cd turf-live-sim
 
 # With yarn
 $ yarn link
