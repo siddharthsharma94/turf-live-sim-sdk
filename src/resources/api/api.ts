@@ -11,7 +11,7 @@ import {
   Games,
 } from './games';
 import * as LiveAPI from './live';
-import { Live, LiveGetGameStatusResponse, LiveGetStatusResponse } from './live';
+import { Live, LiveGetStatusResponse } from './live';
 
 export class API extends APIResource {
   games: GamesAPI.Games = new GamesAPI.Games(this._client);
@@ -31,9 +31,5 @@ export declare namespace API {
     type GameStartSimulationParams as GameStartSimulationParams,
   };
 
-  export {
-    Live as Live,
-    type LiveGetGameStatusResponse as LiveGetGameStatusResponse,
-    type LiveGetStatusResponse as LiveGetStatusResponse,
-  };
+  export { Live as Live, type LiveGetStatusResponse as LiveGetStatusResponse };
 }
