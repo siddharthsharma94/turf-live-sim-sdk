@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'turf-sim/core/api-promise';
+import { APIPromise } from 'turf-sim-live/core/api-promise';
 
 import util from 'node:util';
-import TurfSim from 'turf-sim';
-import { APIUserAbortError } from 'turf-sim';
+import TurfSim from 'turf-sim-live';
+import { APIUserAbortError } from 'turf-sim-live';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

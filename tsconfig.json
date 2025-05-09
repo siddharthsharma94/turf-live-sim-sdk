@@ -9,8 +9,8 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "turf-sim/*": ["src/*"],
-      "turf-sim": ["src/index.ts"]
+      "turf-sim-live/*": ["src/*"],
+      "turf-sim-live": ["src/index.ts"]
     },
     "noEmit": true,
 

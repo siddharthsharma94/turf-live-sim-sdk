@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^turf-sim$': '<rootDir>/src/index.ts',
-    '^turf-sim/(.*)$': '<rootDir>/src/$1',
+    '^turf-sim-live$': '<rootDir>/src/index.ts',
+    '^turf-sim-live/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
