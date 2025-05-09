@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'turf-sim/internal/to-file';
-import { toFile } from 'turf-sim/core/uploads';
+import type { ResponseLike } from 'turf-sim-live/internal/to-file';
+import { toFile } from 'turf-sim-live/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('turf-sim/core/uploads');
+    const uploads = await import('turf-sim-live/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "turf-sim/*": ["dist/src/*"],
-      "turf-sim": ["dist/src/index.ts"]
+      "turf-sim-live/*": ["dist/src/*"],
+      "turf-sim-live": ["dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

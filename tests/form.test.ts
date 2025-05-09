@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'turf-sim/internal/uploads';
-import { toFile } from 'turf-sim/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'turf-sim-live/internal/uploads';
+import { toFile } from 'turf-sim-live/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
