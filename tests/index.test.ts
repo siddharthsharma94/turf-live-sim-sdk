@@ -302,13 +302,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['TURF_SIM_BASE_URL'] = ''; // empty
       const client = new TurfSim({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('https://api.example.com');
+      expect(client.baseURL).toEqual('https://sim.turf.fyi');
     });
 
     test('blank env variable', () => {
       process.env['TURF_SIM_BASE_URL'] = '  '; // blank
       const client = new TurfSim({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('https://api.example.com');
+      expect(client.baseURL).toEqual('https://sim.turf.fyi');
     });
   });
 
