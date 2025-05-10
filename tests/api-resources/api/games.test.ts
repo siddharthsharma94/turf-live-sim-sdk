@@ -8,9 +8,9 @@ const client = new TurfSim({
 });
 
 describe('resource games', () => {
-  // Prism doesn't properly handle redirects
-  test.skip('create: only required params', async () => {
-    const responsePromise = client.api.games.create({ game_id: 'game_id' });
+  // skipped: tests are disabled for the time being
+  test.skip('create', async () => {
+    const responsePromise = client.api.games.create({});
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -18,11 +18,6 @@ describe('resource games', () => {
     const dataAndResponse = await responsePromise.withResponse();
     expect(dataAndResponse.data).toBe(response);
     expect(dataAndResponse.response).toBe(rawResponse);
-  });
-
-  // Prism doesn't properly handle redirects
-  test.skip('create: required and optional params', async () => {
-    const response = await client.api.games.create({ game_id: 'game_id', display_name: 'display_name' });
   });
 
   // skipped: tests are disabled for the time being

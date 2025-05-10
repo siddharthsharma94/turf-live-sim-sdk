@@ -10,15 +10,8 @@ export class Games extends APIResource {
   /**
    * Creates a new game instance from a game ID
    */
-  create(body: GameCreateParams, options?: RequestOptions): APIPromise<void> {
-    return this._client.post('/api/games/create', {
-      body,
-      ...options,
-      headers: buildHeaders([
-        { 'Content-Type': 'application/x-www-form-urlencoded', Accept: '*/*' },
-        options?.headers,
-      ]),
-    });
+  create(body: GameCreateParams, options?: RequestOptions): APIPromise<GameCreateResponse> {
+    return this._client.post('/api/games/create', { body, ...options });
   }
 
   /**
@@ -90,6 +83,24 @@ export class Games extends APIResource {
   }
 }
 
+export interface GameCreateResponse {
+  id?: string;
+
+  created_at?: string;
+
+  current_snapshot_index?: number;
+
+  display_name?: string;
+
+  game_id?: string;
+
+  is_running?: boolean;
+
+  last_updated?: string;
+
+  speed_factor?: number;
+}
+
 export type GameListResponse = Array<GameListResponse.GameListResponseItem>;
 
 export namespace GameListResponse {
@@ -114,14 +125,14 @@ export namespace GameListResponse {
 
 export interface GameCreateParams {
   /**
-   * Game ID to create an instance for
-   */
-  game_id: string;
-
-  /**
    * Display name for the game
    */
   display_name?: string;
+
+  /**
+   * Game ID to create an instance for (defaults to 20913 if not provided)
+   */
+  game_id?: string;
 }
 
 export interface GameDeleteParams {
@@ -143,6 +154,7 @@ export interface GameStartSimulationParams {
 
 export declare namespace Games {
   export {
+    type GameCreateResponse as GameCreateResponse,
     type GameListResponse as GameListResponse,
     type GameCreateParams as GameCreateParams,
     type GameDeleteParams as GameDeleteParams,
