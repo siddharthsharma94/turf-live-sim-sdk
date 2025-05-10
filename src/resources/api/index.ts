@@ -3,6 +3,7 @@
 export { API } from './api';
 export {
   Games,
+  type GameCreateResponse,
   type GameListResponse,
   type GameCreateParams,
   type GameDeleteParams,
