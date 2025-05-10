@@ -8,7 +8,8 @@ import { path } from '../../internal/utils/path';
 
 export class Games extends APIResource {
   /**
-   * Creates a new game instance from a game ID
+   * Creates a new game instance from a game ID. Limited to a maximum of 5 running
+   * games concurrently.
    */
   create(body: GameCreateParams, options?: RequestOptions): APIPromise<GameCreateResponse> {
     return this._client.post('/api/games/create', { body, ...options });
@@ -58,18 +59,15 @@ export class Games extends APIResource {
   }
 
   /**
-   * Starts the simulation for a specific game instance
+   * Starts the simulation for a specific game instance. Limited to 5 running games
+   * concurrently.
    */
   startSimulation(
     gameID: string,
     query: GameStartSimulationParams | null | undefined = {},
     options?: RequestOptions,
-  ): APIPromise<void> {
-    return this._client.get(path`/api/games/${gameID}/start`, {
-      query,
-      ...options,
-      headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
-    });
+  ): APIPromise<GameStartSimulationResponse> {
+    return this._client.get(path`/api/games/${gameID}/start`, { query, ...options });
   }
 
   /**
@@ -123,6 +121,32 @@ export namespace GameListResponse {
   }
 }
 
+export interface GameStartSimulationResponse {
+  game?: GameStartSimulationResponse.Game;
+
+  message?: string;
+}
+
+export namespace GameStartSimulationResponse {
+  export interface Game {
+    id?: string;
+
+    created_at?: string;
+
+    current_snapshot_index?: number;
+
+    display_name?: string;
+
+    game_id?: string;
+
+    is_running?: boolean;
+
+    last_updated?: string;
+
+    speed_factor?: number;
+  }
+}
+
 export interface GameCreateParams {
   /**
    * Display name for the game
@@ -156,6 +180,7 @@ export declare namespace Games {
   export {
     type GameCreateResponse as GameCreateResponse,
     type GameListResponse as GameListResponse,
+    type GameStartSimulationResponse as GameStartSimulationResponse,
     type GameCreateParams as GameCreateParams,
     type GameDeleteParams as GameDeleteParams,
     type GameSetSnapshotParams as GameSetSnapshotParams,
