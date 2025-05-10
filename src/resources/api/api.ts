@@ -4,6 +4,7 @@ import { APIResource } from '../../core/resource';
 import * as GamesAPI from './games';
 import {
   GameCreateParams,
+  GameCreateResponse,
   GameDeleteParams,
   GameListResponse,
   GameSetSnapshotParams,
@@ -24,6 +25,7 @@ API.Live = Live;
 export declare namespace API {
   export {
     Games as Games,
+    type GameCreateResponse as GameCreateResponse,
     type GameListResponse as GameListResponse,
     type GameCreateParams as GameCreateParams,
     type GameDeleteParams as GameDeleteParams,
