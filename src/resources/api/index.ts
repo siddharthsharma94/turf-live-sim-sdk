@@ -9,4 +9,4 @@ export {
   type GameSetSnapshotParams,
   type GameStartSimulationParams,
 } from './games';
-export { Live, type LiveGetGameStatusResponse, type LiveGetStatusResponse } from './live';
+export { Live, type Quarter, type LiveGetGameStatusResponse, type LiveGetStatusResponse } from './live';
