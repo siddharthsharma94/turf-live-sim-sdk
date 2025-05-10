@@ -20,9 +20,11 @@ Methods:
 
 Types:
 
+- <code><a href="./src/resources/api/live.ts">Quarter</a></code>
+- <code><a href="./src/resources/api/live.ts">LiveGetGameStatusResponse</a></code>
 - <code><a href="./src/resources/api/live.ts">LiveGetStatusResponse</a></code>
 
 Methods:
 
-- <code title="get /api/live/{game_id}">client.api.live.<a href="./src/resources/api/live.ts">getGameStatus</a>(gameID) -> void</code>
+- <code title="get /api/live/{game_id}">client.api.live.<a href="./src/resources/api/live.ts">getGameStatus</a>(gameID) -> LiveGetGameStatusResponse</code>
 - <code title="get /api/live">client.api.live.<a href="./src/resources/api/live.ts">getStatus</a>() -> LiveGetStatusResponse</code>
