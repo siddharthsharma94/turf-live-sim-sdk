@@ -20,6 +20,7 @@ Methods:
 
 Types:
 
+- <code><a href="./src/resources/api/live.ts">Quarter</a></code>
 - <code><a href="./src/resources/api/live.ts">LiveGetGameStatusResponse</a></code>
 - <code><a href="./src/resources/api/live.ts">LiveGetStatusResponse</a></code>
 

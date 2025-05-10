@@ -1,6 +1,7 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
 import { APIResource } from '../../core/resource';
+import * as LiveAPI from './live';
 import { APIPromise } from '../../core/api-promise';
 import { RequestOptions } from '../../internal/request-options';
 import { path } from '../../internal/utils/path';
@@ -21,6 +22,20 @@ export class Live extends APIResource {
   }
 }
 
+export interface Quarter {
+  AwayScore?: number;
+
+  GameID?: number;
+
+  HomeScore?: number;
+
+  Name?: string;
+
+  Number?: number;
+
+  QuarterID?: number;
+}
+
 export interface LiveGetGameStatusResponse {
   _meta?: LiveGetGameStatusResponse._Meta;
 
@@ -28,7 +43,7 @@ export interface LiveGetGameStatusResponse {
 
   Plays?: Array<LiveGetGameStatusResponse.Play>;
 
-  Quarters?: Array<LiveGetGameStatusResponse.Quarter>;
+  Quarters?: Array<Quarter>;
 }
 
 export namespace LiveGetGameStatusResponse {
@@ -109,7 +124,7 @@ export namespace LiveGetGameStatusResponse {
 
     Quarter?: string | null;
 
-    Quarters?: Array<Game.Quarter>;
+    Quarters?: Array<LiveAPI.Quarter>;
 
     RefereeID?: number;
 
@@ -135,20 +150,6 @@ export namespace LiveGetGameStatusResponse {
   }
 
   export namespace Game {
-    export interface Quarter {
-      AwayScore?: number;
-
-      GameID?: number;
-
-      HomeScore?: number;
-
-      Name?: string;
-
-      Number?: number;
-
-      QuarterID?: number;
-    }
-
     export interface SeriesInfo {
       AwayTeamWins?: number;
 
@@ -233,20 +234,6 @@ export namespace LiveGetGameStatusResponse {
 
     Updated?: string;
   }
-
-  export interface Quarter {
-    AwayScore?: number;
-
-    GameID?: number;
-
-    HomeScore?: number;
-
-    Name?: string;
-
-    Number?: number;
-
-    QuarterID?: number;
-  }
 }
 
 export interface LiveGetStatusResponse {
@@ -263,7 +250,7 @@ export namespace LiveGetStatusResponse {
 
     Plays?: Array<Game.Play>;
 
-    Quarters?: Array<Game.Quarter>;
+    Quarters?: Array<LiveAPI.Quarter>;
   }
 
   export namespace Game {
@@ -344,7 +331,7 @@ export namespace LiveGetStatusResponse {
 
       Quarter?: string | null;
 
-      Quarters?: Array<Game.Quarter>;
+      Quarters?: Array<LiveAPI.Quarter>;
 
       RefereeID?: number;
 
@@ -370,20 +357,6 @@ export namespace LiveGetStatusResponse {
     }
 
     export namespace Game {
-      export interface Quarter {
-        AwayScore?: number;
-
-        GameID?: number;
-
-        HomeScore?: number;
-
-        Name?: string;
-
-        Number?: number;
-
-        QuarterID?: number;
-      }
-
       export interface SeriesInfo {
         AwayTeamWins?: number;
 
@@ -468,25 +441,12 @@ export namespace LiveGetStatusResponse {
 
       Updated?: string;
     }
-
-    export interface Quarter {
-      AwayScore?: number;
-
-      GameID?: number;
-
-      HomeScore?: number;
-
-      Name?: string;
-
-      Number?: number;
-
-      QuarterID?: number;
-    }
   }
 }
 
 export declare namespace Live {
   export {
+    type Quarter as Quarter,
     type LiveGetGameStatusResponse as LiveGetGameStatusResponse,
     type LiveGetStatusResponse as LiveGetStatusResponse,
   };
