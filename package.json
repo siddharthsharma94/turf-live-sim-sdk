@@ -1,6 +1,6 @@
 {
   "name": "turf-sim-live",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "The official TypeScript library for the Turf Sim API",
   "author": "Turf Sim <>",
   "types": "dist/index.d.ts",

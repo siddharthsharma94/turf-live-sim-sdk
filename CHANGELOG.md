@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2025-05-10)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/siddharthsharma94/turf-live-sim-sdk/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Features
+
+* **api:** api update ([8b07816](https://github.com/siddharthsharma94/turf-live-sim-sdk/commit/8b0781623099f481b9017b42f8b6344ce0ffb53b))
+* **api:** manual updates ([7f265cc](https://github.com/siddharthsharma94/turf-live-sim-sdk/commit/7f265ccb20ab5ad56cf622c5c6ae385d829edb55))
+
 ## 0.1.0-alpha.2 (2025-05-09)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/siddharthsharma94/turf-live-sim-sdk/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
