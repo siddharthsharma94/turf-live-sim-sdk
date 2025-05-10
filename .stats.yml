@@ -1,4 +1,4 @@
 configured_endpoints: 9
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/turf%2Fturf-sim-300871c183d5a35521f324b88b9425d68cfdb30e7387615b0122872a470e4efa.yml
-openapi_spec_hash: 2da4e1f44e19b65aa4d16b91bf9e8729
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/turf%2Fturf-sim-a8b260f865b90906766a986eff9b9656ac05962ae585f10c0d63c655344824a7.yml
+openapi_spec_hash: 1a535c7f4bac9d8fe309184615b00d1c
 config_hash: 10c4e4ca832b4404718b9ea2ed58ddbd

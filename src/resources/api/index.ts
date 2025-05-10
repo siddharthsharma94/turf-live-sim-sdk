@@ -5,6 +5,7 @@ export {
   Games,
   type GameCreateResponse,
   type GameListResponse,
+  type GameStartSimulationResponse,
   type GameCreateParams,
   type GameDeleteParams,
   type GameSetSnapshotParams,

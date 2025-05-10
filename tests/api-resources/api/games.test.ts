@@ -81,7 +81,7 @@ describe('resource games', () => {
     const response = await client.api.games.setSnapshot('game_id', { index: 0 });
   });
 
-  // Prism doesn't properly handle redirects
+  // skipped: tests are disabled for the time being
   test.skip('startSimulation', async () => {
     const responsePromise = client.api.games.startSimulation('game_id');
     const rawResponse = await responsePromise.asResponse();
@@ -93,7 +93,7 @@ describe('resource games', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism doesn't properly handle redirects
+  // skipped: tests are disabled for the time being
   test.skip('startSimulation: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
