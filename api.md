@@ -6,6 +6,7 @@ Types:
 
 - <code><a href="./src/resources/api/games.ts">GameCreateResponse</a></code>
 - <code><a href="./src/resources/api/games.ts">GameListResponse</a></code>
+- <code><a href="./src/resources/api/games.ts">GameStartSimulationResponse</a></code>
 
 Methods:
 
@@ -14,7 +15,7 @@ Methods:
 - <code title="get /api/games">client.api.games.<a href="./src/resources/api/games.ts">list</a>() -> GameListResponse</code>
 - <code title="post /api/games/{game_id}/delete">client.api.games.<a href="./src/resources/api/games.ts">delete</a>(gameID, { ...params }) -> void</code>
 - <code title="get /api/games/{game_id}/set">client.api.games.<a href="./src/resources/api/games.ts">setSnapshot</a>(gameID, { ...params }) -> void</code>
-- <code title="get /api/games/{game_id}/start">client.api.games.<a href="./src/resources/api/games.ts">startSimulation</a>(gameID, { ...params }) -> void</code>
+- <code title="get /api/games/{game_id}/start">client.api.games.<a href="./src/resources/api/games.ts">startSimulation</a>(gameID, { ...params }) -> GameStartSimulationResponse</code>
 - <code title="get /api/games/{game_id}/stop">client.api.games.<a href="./src/resources/api/games.ts">stopSimulation</a>(gameID) -> void</code>
 
 ## Live

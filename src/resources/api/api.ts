@@ -9,6 +9,7 @@ import {
   GameListResponse,
   GameSetSnapshotParams,
   GameStartSimulationParams,
+  GameStartSimulationResponse,
   Games,
 } from './games';
 import * as LiveAPI from './live';
@@ -27,6 +28,7 @@ export declare namespace API {
     Games as Games,
     type GameCreateResponse as GameCreateResponse,
     type GameListResponse as GameListResponse,
+    type GameStartSimulationResponse as GameStartSimulationResponse,
     type GameCreateParams as GameCreateParams,
     type GameDeleteParams as GameDeleteParams,
     type GameSetSnapshotParams as GameSetSnapshotParams,
