@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.6 (2025-05-22)
+
+Full Changelog: [v0.1.0-alpha.5...v0.1.0-alpha.6](https://github.com/siddharthsharma94/turf-live-sim-sdk/compare/v0.1.0-alpha.5...v0.1.0-alpha.6)
+
+### Chores
+
+* **docs:** grammar improvements ([26f14fe](https://github.com/siddharthsharma94/turf-live-sim-sdk/commit/26f14fefb7e9aa870a780c0d80d760435d0bcd38))
+* **package:** remove engines ([dc62207](https://github.com/siddharthsharma94/turf-live-sim-sdk/commit/dc62207d6acce11e8ba18ddbd6232277681adbb7))
+
 ## 0.1.0-alpha.5 (2025-05-10)
 
 Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/siddharthsharma94/turf-live-sim-sdk/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
